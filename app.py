@@ -49,6 +49,8 @@ while True:
         if sem_depositos == True:
             print ("Não Foram Realizadas Movimentações.")
         else:
+            print("Saldo:")
+            print(f"Seu saldo é de: R${saldo:.2f}", end="\n")
             print("Depósitos:")
             for i in range (0, len(deposito)):
                 print(f"Deposito {i+1}: R${deposito[i]:.2f}", end="\n")
